@@ -1,0 +1,1 @@
+interface ArmaDistancia extends Arma {}
