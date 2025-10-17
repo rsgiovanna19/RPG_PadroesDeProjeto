@@ -1,8 +1,10 @@
+//importando o necessário
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
+//
 class Batalha {
     private List<Personagem> timeA;
     private List<Personagem> timeB;
@@ -13,7 +15,7 @@ class Batalha {
     }
 
     public void iniciar() {
-        System.out.println("--- BATALHA INICIADA ---");
+        System.out.println("NOVA BATALHA");
         int rodada = 1;
         while (temVivos(timeA) && temVivos(timeB)) {
             System.out.printf("\n--- Rodada %d ---\n", rodada++);

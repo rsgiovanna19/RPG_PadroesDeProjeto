@@ -9,7 +9,7 @@ class Arqueiro extends Personagem {
 
     @Override
     protected int aplicarReducaoDano(int dano) {
-        if (rng.nextDouble() < 0.25) {
+        if (rng.nextDouble() < 0.25) {  //usando um random para reducao de dano 
             System.out.printf("%s esquivou do ataque!\n", nome);
             return 0;
         }
@@ -21,7 +21,7 @@ class Mago extends Personagem {
     public Mago(String nome) { super(nome, 70, 150, 5, 7, 18); }
 
     @Override
-    public void regenerarFinalTurno() {
+    public void regenerarFinalTurno() { 
         int antes = mana;
         mana = Math.min(manaMaxima, mana + 10);
         if (mana != antes)
